@@ -1,19 +1,18 @@
-import Vuex from 'vuex'
+import Vuex from "vuex";
 
 export default Vuex.createStore({
   state: {
-    count: 0
+    count: 0,
   },
   mutations: {
     ADD(state) {
-      state.count++
-    }
+      state.count++;
+    },
   },
   actions: {
     add({ commit }) {
-      commit('ADD')
-    }
+      commit("ADD");
+    },
   },
-  modules: {
-  }
-})
+  modules: {},
+});
